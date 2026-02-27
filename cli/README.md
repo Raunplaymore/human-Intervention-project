@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![npm version](https://img.shields.io/npm/v/human-intervention-project.svg)](https://www.npmjs.com/package/human-intervention-project)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/raunplaymore/human-Intervention-project/pulls)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-orange.svg)](https://buymeacoffee.com/pmpt_cafe)
 
 **One command. A slightly more careful AI.**
 
@@ -230,3 +231,5 @@ Full background: [`docs/`](docs/)
 ---
 
 **`npx human-intervention-project init` → a slightly more careful AI → share with your team → repeat.**
+
+If this project is useful to you, consider [buying me a coffee](https://buymeacoffee.com/pmpt_cafe).
