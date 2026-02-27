@@ -1,0 +1,30 @@
+{
+  "name": "hip",
+  "version": "0.1.0",
+  "description": "🛡️ Human Intervention Project — One command. A slightly more careful AI.",
+  "bin": {
+    "hip": "./bin/hip.js"
+  },
+  "keywords": [
+    "ai",
+    "safety",
+    "ethics",
+    "self-test",
+    "protocol",
+    "claude",
+    "chatgpt",
+    "gemini",
+    "cursor",
+    "copilot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raunplaymore/human-Intervention-project"
+  },
+  "files": [
+    "bin/",
+    "templates/"
+  ]
+}
