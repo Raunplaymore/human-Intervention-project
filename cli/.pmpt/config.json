@@ -1,0 +1,14 @@
+{
+  "projectPath": "/Users/hwangjunguk/Desktop/dir_UK/hip/cli",
+  "docsPath": ".pmpt/docs",
+  "ignorePatterns": [
+    "node_modules/**",
+    ".pmpt/.history/**",
+    "dist/**"
+  ],
+  "createdAt": "2026-02-27T14:15:26.347Z",
+  "trackGit": false,
+  "origin": "new",
+  "lastPublished": "2026-02-27T14:28:07.417Z",
+  "lastPublishedSlug": "human-intervention-project"
+}

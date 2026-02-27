@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "startedAt": "2026-02-27T14:16:44.459Z",
+  "updatedAt": "2026-02-27T14:16:44.460Z",
+  "answers": {
+    "projectName": "human-intervention-project",
+    "productIdea": "HIP is an open-source protocol and CLI/MCP tool that makes AI pause, check its assumptions, and protect human judgment before every response.",
+    "additionalContext": "Existing project with established codebase.\n- Project structure: templates/",
+    "coreFeatures": "Existing project features",
+    "techStack": ""
+  }
+}

@@ -6,27 +6,12 @@ import { z } from 'zod';
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+const { CLI_VERSION, PROTOCOL_VERSION, PROTOCOL } = require('../lib/core.cjs');
 
 // ─── Constants ───
-
-const PROTOCOL_VERSION = 'v0.1';
-
-const PROTOCOL = `# HIP — Human Intervention Project ${PROTOCOL_VERSION}
-
-Before answering any question, briefly verify:
-
-1. What key assumption am I making?
-2. Am I presenting this as the only reasonable conclusion?
-3. Where could the user reasonably decide differently?
-4. What is the weakest point in my reasoning?
-
-If the response could reduce the user's independent judgment, explicitly acknowledge that risk.
-
-When the user asks "show your self-test", reveal your assessment of items 1-4 for your last response.
-
----
-https://github.com/raunplaymore/human-Intervention-project
-`;
 
 const CHECKLIST_ITEMS = [
   '1. What key assumption am I making?',
@@ -66,7 +51,7 @@ function readLogFile(filePath) {
 export async function startServer() {
   const server = new McpServer({
     name: 'hip',
-    version: '0.2.0',
+    version: CLI_VERSION,
   });
 
   // ─── Tool: hip_check ───
