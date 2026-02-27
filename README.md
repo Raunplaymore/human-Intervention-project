@@ -1,13 +1,13 @@
 # HIP — Human Intervention Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![npm version](https://img.shields.io/npm/v/hip.svg)](https://www.npmjs.com/package/hip)
+[![npm version](https://img.shields.io/npm/v/human-intervention-project.svg)](https://www.npmjs.com/package/human-intervention-project)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/raunplaymore/human-Intervention-project/pulls)
 
 **One command. A slightly more careful AI.**
 
 ```bash
-npx hip init
+npx human-intervention-project init
 ```
 
 ---
@@ -31,7 +31,7 @@ This project does the opposite. When AI tries to "complete" your thinking by giv
 ## Quick Start
 
 ```bash
-npx hip init
+npx human-intervention-project init
 ```
 
 That's it. HIP detects your environment and drops in the right file.
@@ -62,8 +62,8 @@ If you prefer, just copy the file yourself:
 ### Other Commands
 
 ```bash
-npx hip status   # Check if HIP is installed in current project
-npx hip update   # Update protocol to latest version
+npx human-intervention-project status   # Check if HIP is installed in current project
+npx human-intervention-project update   # Update protocol to latest version
 ```
 
 ## The Protocol
@@ -186,4 +186,4 @@ Full background: [`docs/`](docs/)
 
 ---
 
-**`npx hip init` → a slightly more careful AI → share with your team → repeat.**
+**`npx human-intervention-project init` → a slightly more careful AI → share with your team → repeat.**
