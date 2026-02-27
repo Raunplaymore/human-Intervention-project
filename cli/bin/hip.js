@@ -208,6 +208,7 @@ function help() {
   log('     init     Install HIP protocol in your project');
   log('     status   Check current HIP installation');
   log('     update   Update protocol to latest version');
+  log('     mcp      Start HIP as an MCP server (for Claude Desktop, etc.)');
   log('     help     Show this message\n');
   log('   Options:');
   log('     --target <cursor|claude|copilot>   Specify environment\n');
@@ -236,6 +237,12 @@ switch (command) {
     break;
   case 'update':
     update();
+    break;
+  case 'mcp':
+    import('./mcp-server.mjs').catch(err => {
+      console.error('Failed to start MCP server:', err.message);
+      process.exit(1);
+    });
     break;
   case 'help':
   case '--help':

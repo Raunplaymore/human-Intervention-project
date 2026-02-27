@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.2.0 (2026-02-27)
+
+### MCP Server
+- `npx human-intervention-project mcp` starts an MCP server
+- Tools: `hip_check`, `hip_self_test`, `hip_log`
+- Resource: `hip://protocol`
+- Prompt template: `hip-review`
+- Logs self-test results to `~/.hip/logs/` as date-stamped JSON
+- Zero-config setup for Claude Desktop, Claude Code, VS Code
+- Uses stdio transport (standard for local MCP servers)
+
+### Dependencies
+- Added `@modelcontextprotocol/sdk` (^1.27.1)
+- Added `zod` (^3.24.0)
+
 ## v0.1.0 (2026-02-26)
 
 ### 🚀 Initial Release

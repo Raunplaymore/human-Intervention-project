@@ -66,6 +66,46 @@ npx human-intervention-project status   # Check if HIP is installed in current p
 npx human-intervention-project update   # Update protocol to latest version
 ```
 
+### MCP Server (for Claude Desktop, Claude Code, VS Code)
+
+HIP also runs as a live [Model Context Protocol](https://modelcontextprotocol.io) server, giving MCP-compatible AI clients real-time access to the self-check protocol — no file copying needed.
+
+**Add to your Claude Desktop config** (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "hip": {
+      "command": "npx",
+      "args": ["-y", "human-intervention-project", "mcp"]
+    }
+  }
+}
+```
+
+**For Claude Code** (`~/.claude/settings.json`):
+
+```json
+{
+  "mcpServers": {
+    "hip": {
+      "command": "npx",
+      "args": ["-y", "human-intervention-project", "mcp"]
+    }
+  }
+}
+```
+
+**Available MCP tools:**
+
+| Tool | Description |
+|------|-------------|
+| `hip_check` | Returns the 4-item self-check checklist (call before responding) |
+| `hip_self_test` | Evaluate a response against the 4 criteria |
+| `hip_log` | Save self-test results to `~/.hip/logs/` |
+
+**Token overhead:** ~100 tokens per session for tool registration. Tool calls only consume tokens when actually invoked. Negligible compared to typical conversation usage.
+
 ## The Protocol
 
 8 lines. Works on any AI.
@@ -146,6 +186,9 @@ A: Minimally. The 4-item checklist adds a brief internal verification step. In p
 
 **Q: Which AI models work best with HIP?**
 A: We've tested with Claude, ChatGPT, and Gemini. Models that follow system prompts closely (Claude, GPT-4) tend to show the strongest effect. We welcome community-submitted test results for other models.
+
+**Q: Does the MCP server cost extra tokens?**
+A: Tool registration adds ~100 tokens per session. Individual tool calls only use tokens when invoked. For context, a typical conversation turn uses thousands of tokens — HIP's overhead is negligible.
 
 **Q: Is this just telling AI to hedge more?**
 A: Not exactly. Hedging is a side effect. The real goal is **making assumptions visible**. An AI that says "I'm assuming X" gives you more power than one that just sounds less confident.
